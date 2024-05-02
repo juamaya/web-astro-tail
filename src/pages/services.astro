@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BtnHome from "../components/btn_home.astro";
+import Recursos from "../components/Recursos.astro";
+import Tarjeta from '../components/astro/Tarjeta.astro'
+---
+
+<Layout title="JUAMAYA | Services">
+  <main>
+   <p class="instructions">
+		 
+      <strong>RECURSOS WEB</strong>  
+   </p>
+
+   <Recursos/>
+
+   <p class="instructions">
+		 
+	<strong>  WEB</strong>  
+ </p>
+
+   <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center mx-20">
+	<Tarjeta title="The Markdown Guide" href="https://www.markdownguide.org/" img="src/images/markdown.jpg"/>
+	<Tarjeta title="Mi Repositorio en github.com" href="https://github.com/juamaya" img="src/images/gh-pages.jpg"/>
+	<Tarjeta title="Cree sitios web optimizados rápidamente y concéntrese en su contenidoaaaa" href="https://docusaurus.io/" img="src/images/docusaurus.jpg"/>
+	<Tarjeta title="El marco web para sitios web basados ​​en contenido" href="https://astro.build/ "img="src/images/astro.png"/>
+	<Tarjeta title="Herramientas frontend de próxima generación" href="https://vitejs.dev/"img="src/images/vite1.jpg" />
+	<Tarjeta title="El marco React para la Web" href="https://nextjs.org/" img="src/images/nextjs.jpg"/>
+  </section>
+
+    <BtnHome />
+  </main>
+</Layout>
+
+<style>
+
+.instructions {
+		text-align: center;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+ 
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+
+</style>
